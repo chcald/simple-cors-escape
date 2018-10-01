@@ -23,7 +23,7 @@ let getPostData = request => {
 
 http.createServer(function (req, res) {
 	console.log("Server running on port " + port);
-	console.log(`Reuest to: ${req.url}`);
+	console.log(`Request to: ${req.url}`);
 	let query = url.parse(req.url, true).query;
 
 	getPostData(req)
